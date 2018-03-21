@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Desktop_synth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-3" translatesAutoresizingMaskIntoConstraints="NO" id="88R-mH-qtE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72C-BF-g9A">
+                                <rect key="frame" x="16" y="512" width="343" height="145"/>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qwk-RS-G78" customClass="Knob" customModule="Desktop_synth" customModuleProvider="target">
+                                <rect key="frame" x="41" y="80" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hn-Li-jol" customClass="Knob" customModule="Desktop_synth" customModuleProvider="target">
+                                <rect key="frame" x="243" y="85" width="125" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdB-wX-Fwd" customClass="Knob" customModule="Desktop_synth" customModuleProvider="target">
+                                <rect key="frame" x="41" y="185" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8R-VQ-GYs" customClass="Knob" customModule="Desktop_synth" customModuleProvider="target">
+                                <rect key="frame" x="45" y="292" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osu-Oj-jH2" customClass="Knob" customModule="Desktop_synth" customModuleProvider="target">
+                                <rect key="frame" x="125" y="292" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXK-NP-FFi" customClass="Knob" customModule="Desktop_synth" customModuleProvider="target">
+                                <rect key="frame" x="205" y="292" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Jx-OL-TvX" customClass="EZAudioPlot">
+                                <rect key="frame" x="115" y="146" width="153" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Hg-ZY-U40" customClass="Knob" customModule="Desktop_synth" customModuleProvider="target">
+                                <rect key="frame" x="285" y="292" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ioX-9L-ozj" customClass="Knob" customModule="Desktop_synth" customModuleProvider="target">
+                                <rect key="frame" x="164" y="60" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ko8-fK-cqE">
+                                <rect key="frame" x="36" y="456" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.55124379270000001" green="1" blue="0.9946239912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.55124379270000001" green="1" blue="0.9946239912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" red="0.37141100888324874" green="0.35070160927401633" blue="0.36637772651411904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="filtercut:" destination="BYZ-38-t0r" eventType="valueChanged" id="nx2-f1-fB5"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qWw-fF-9um">
+                                <rect key="frame" x="152" y="404" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.55124379270000001" green="1" blue="0.9946239912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.55124379270000001" green="1" blue="0.9946239912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" red="0.37141100888324874" green="0.35070160927401633" blue="0.36637772651411904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="filterres:" destination="BYZ-38-t0r" eventType="valueChanged" id="yNF-Tx-ScG"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kPJ-hI-zBO">
+                                <rect key="frame" x="152" y="456" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.55124379270000001" green="1" blue="0.9946239912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.55124379270000001" green="1" blue="0.9946239912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" red="0.37141100888324874" green="0.35070160927401633" blue="0.36637772651411904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="filter4:" destination="BYZ-38-t0r" eventType="valueChanged" id="XBA-iE-C0X"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ixc-Pa-ftz" customClass="Knob" customModule="Desktop_synth" customModuleProvider="target">
+                                <rect key="frame" x="304" y="382" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0IY-qz-NUc" customClass="Knob" customModule="Desktop_synth" customModuleProvider="target">
+                                <rect key="frame" x="304" y="450" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rl5-Me-Y9d" customClass="Knob" customModule="Desktop_synth" customModuleProvider="target">
+                                <rect key="frame" x="270" y="185" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="eZ8-dc-poY">
+                                <rect key="frame" x="36" y="404" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.55124379270000001" green="1" blue="0.9946239912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.55124379270000001" green="1" blue="0.9946239912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" red="0.37141100888324874" green="0.35070160927401633" blue="0.36637772651411904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="filterlen:" destination="BYZ-38-t0r" eventType="valueChanged" id="loo-ah-r7L"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="0.019867876544594765" green="0.0075053190812468529" blue="0.024030225351452827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i8R-VQ-GYs" firstAttribute="top" secondItem="TdB-wX-Fwd" secondAttribute="bottom" constant="37" id="0kC-XX-hWo"/>
+                            <constraint firstItem="72C-BF-g9A" firstAttribute="top" secondItem="0Hg-ZY-U40" secondAttribute="bottom" constant="170" id="2Do-Kt-J00"/>
+                            <constraint firstItem="Qwk-RS-G78" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="2Xh-Sl-83W"/>
+                            <constraint firstItem="0Hg-ZY-U40" firstAttribute="top" secondItem="ioX-9L-ozj" secondAttribute="bottom" constant="182" id="2rS-zr-vCV"/>
+                            <constraint firstItem="0Hg-ZY-U40" firstAttribute="top" secondItem="osu-Oj-jH2" secondAttribute="top" id="32a-8E-2R2"/>
+                            <constraint firstItem="qXK-NP-FFi" firstAttribute="leading" secondItem="osu-Oj-jH2" secondAttribute="trailing" constant="30" id="36g-6g-Akj"/>
+                            <constraint firstItem="i8R-VQ-GYs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="3bj-Ny-tmB"/>
+                            <constraint firstItem="qXK-NP-FFi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="205" id="6L2-wo-fFd"/>
+                            <constraint firstItem="72C-BF-g9A" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="512" id="6XD-7o-bYF"/>
+                            <constraint firstItem="TdB-wX-Fwd" firstAttribute="top" secondItem="0Jx-OL-TvX" secondAttribute="bottom" constant="-6" id="Bko-0q-kNs"/>
+                            <constraint firstItem="0Hg-ZY-U40" firstAttribute="leading" secondItem="qXK-NP-FFi" secondAttribute="trailing" constant="30" id="D60-Eu-rNU"/>
+                            <constraint firstItem="Qwk-RS-G78" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="Fdp-iP-eUK"/>
+                            <constraint firstItem="osu-Oj-jH2" firstAttribute="leading" secondItem="i8R-VQ-GYs" secondAttribute="trailing" constant="30" id="Fyp-fQ-1Ch"/>
+                            <constraint firstItem="TdB-wX-Fwd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="185" id="GJp-8T-b5I"/>
+                            <constraint firstItem="0Jx-OL-TvX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="146" id="Khy-eb-lDp"/>
+                            <constraint firstItem="i8R-VQ-GYs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="292" id="MPa-tf-l0r"/>
+                            <constraint firstItem="0Jx-OL-TvX" firstAttribute="top" secondItem="3Hn-Li-jol" secondAttribute="bottom" constant="-9" id="Mq0-Ee-G9N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Hg-ZY-U40" secondAttribute="trailing" constant="40" id="NGl-T5-zzb"/>
+                            <constraint firstAttribute="trailing" secondItem="3Hn-Li-jol" secondAttribute="trailing" constant="7" id="P3Y-g7-fSx"/>
+                            <constraint firstItem="72C-BF-g9A" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="PVv-ml-sjt"/>
+                            <constraint firstItem="3Hn-Li-jol" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="243" id="Tpr-au-KPN"/>
+                            <constraint firstItem="osu-Oj-jH2" firstAttribute="leading" secondItem="i8R-VQ-GYs" secondAttribute="trailing" constant="30" id="UTf-nJ-YzR"/>
+                            <constraint firstItem="72C-BF-g9A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Va7-tN-iFm"/>
+                            <constraint firstItem="3Hn-Li-jol" firstAttribute="leading" secondItem="Qwk-RS-G78" secondAttribute="trailing" constant="132" id="VcQ-39-n9O"/>
+                            <constraint firstItem="qXK-NP-FFi" firstAttribute="leading" secondItem="osu-Oj-jH2" secondAttribute="trailing" constant="30" id="WhB-Jn-rma"/>
+                            <constraint firstItem="0Jx-OL-TvX" firstAttribute="trailing" secondItem="3Hn-Li-jol" secondAttribute="trailing" constant="-100" id="Wp8-yQ-s4W"/>
+                            <constraint firstItem="ioX-9L-ozj" firstAttribute="top" secondItem="0Jx-OL-TvX" secondAttribute="bottom" constant="-131" id="X5h-dV-KSJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="72C-BF-g9A" secondAttribute="trailing" constant="16" id="XfE-aA-B6t"/>
+                            <constraint firstItem="0Hg-ZY-U40" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="285" id="ZHg-ub-Y15"/>
+                            <constraint firstItem="0Jx-OL-TvX" firstAttribute="top" secondItem="Qwk-RS-G78" secondAttribute="bottom" constant="-4" id="Zts-J1-Z3P"/>
+                            <constraint firstItem="3Hn-Li-jol" firstAttribute="leading" secondItem="ioX-9L-ozj" secondAttribute="leading" constant="79" id="aGi-eW-8k8"/>
+                            <constraint firstItem="TdB-wX-Fwd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="b3m-Wx-EXe"/>
+                            <constraint firstItem="i8R-VQ-GYs" firstAttribute="top" secondItem="osu-Oj-jH2" secondAttribute="top" id="dmf-Gt-S6c"/>
+                            <constraint firstItem="0Jx-OL-TvX" firstAttribute="trailing" secondItem="ioX-9L-ozj" secondAttribute="trailing" constant="54" id="fNX-qq-r45"/>
+                            <constraint firstItem="72C-BF-g9A" firstAttribute="top" secondItem="qXK-NP-FFi" secondAttribute="bottom" constant="170" id="fhK-1Q-Lvr"/>
+                            <constraint firstItem="72C-BF-g9A" firstAttribute="top" secondItem="i8R-VQ-GYs" secondAttribute="bottom" constant="170" id="hGb-EP-lE4"/>
+                            <constraint firstItem="3Hn-Li-jol" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="jPy-A1-Ude"/>
+                            <constraint firstItem="ioX-9L-ozj" firstAttribute="leading" secondItem="TdB-wX-Fwd" secondAttribute="trailing" constant="53" id="moI-U8-J3d"/>
+                            <constraint firstItem="osu-Oj-jH2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="125" id="myq-Xz-fQ6"/>
+                            <constraint firstItem="0Hg-ZY-U40" firstAttribute="leading" secondItem="qXK-NP-FFi" secondAttribute="trailing" constant="30" id="nuw-FF-5Wp"/>
+                            <constraint firstItem="72C-BF-g9A" firstAttribute="top" secondItem="osu-Oj-jH2" secondAttribute="bottom" constant="170" id="otV-Rs-RQn"/>
+                            <constraint firstItem="0Jx-OL-TvX" firstAttribute="leading" secondItem="Qwk-RS-G78" secondAttribute="leading" constant="74" id="qUf-3T-gQg"/>
+                            <constraint firstItem="0Hg-ZY-U40" firstAttribute="leading" secondItem="qXK-NP-FFi" secondAttribute="trailing" constant="30" id="rd7-Ux-Wt1"/>
+                            <constraint firstItem="osu-Oj-jH2" firstAttribute="top" secondItem="qXK-NP-FFi" secondAttribute="top" id="vBt-BJ-86G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="AudioPlot" destination="0Jx-OL-TvX" id="EUn-vb-Xzc"/>
+                        <outlet property="attack" destination="i8R-VQ-GYs" id="wje-Km-vyV"/>
+                        <outlet property="decay" destination="osu-Oj-jH2" id="eRw-77-WaP"/>
+                        <outlet property="keyvie" destination="72C-BF-g9A" id="pOY-uL-lSx"/>
+                        <outlet property="lfodep" destination="0IY-qz-NUc" id="5HT-W5-nfi"/>
+                        <outlet property="lforate" destination="Ixc-Pa-ftz" id="TaA-gt-qEK"/>
+                        <outlet property="masterVolKnob" destination="ioX-9L-ozj" id="G03-IB-m9M"/>
+                        <outlet property="processone" destination="Qwk-RS-G78" id="T60-Mg-bpd"/>
+                        <outlet property="processthree" destination="TdB-wX-Fwd" id="D6L-9k-PMu"/>
+                        <outlet property="processtwo" destination="3Hn-Li-jol" id="PqN-hL-c9m"/>
+                        <outlet property="ramptme" destination="rl5-Me-Y9d" id="Phc-FJ-S2q"/>
+                        <outlet property="rellength" destination="0Hg-ZY-U40" id="YFm-Sy-Fel"/>
+                        <outlet property="sustain" destination="qXK-NP-FFi" id="RJZ-9U-Xta"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.600000000000001" y="31.03448275862069"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg-3" width="375" height="667"/>
+    </resources>
+</document>

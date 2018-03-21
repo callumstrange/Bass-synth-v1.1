@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		883AD761205D8C0B0021083F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883AD760205D8C0B0021083F /* AppDelegate.swift */; };
+		883AD763205D8C0B0021083F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883AD762205D8C0B0021083F /* ViewController.swift */; };
+		883AD766205D8C0B0021083F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883AD764205D8C0B0021083F /* Main.storyboard */; };
+		883AD768205D8C0B0021083F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883AD767205D8C0B0021083F /* Assets.xcassets */; };
+		883AD76B205D8C0B0021083F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883AD769205D8C0B0021083F /* LaunchScreen.storyboard */; };
+		883AD797205D8D2F0021083F /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883AD795205D8D2F0021083F /* AudioKitUI.framework */; };
+		883AD798205D8D2F0021083F /* AudioKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 883AD795205D8D2F0021083F /* AudioKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		883AD799205D8D2F0021083F /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883AD796205D8D2F0021083F /* AudioKit.framework */; };
+		883AD79A205D8D2F0021083F /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 883AD796205D8D2F0021083F /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		883AD79D205F05380021083F /* SynthVC+NoteNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883AD79C205F05380021083F /* SynthVC+NoteNames.swift */; };
+		883AD7EC20602C060021083F /* Knob+Touches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883AD7E920602C050021083F /* Knob+Touches.swift */; };
+		883AD7ED20602C060021083F /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883AD7EA20602C060021083F /* Knob.swift */; };
+		883AD7EE20602C060021083F /* KnobStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883AD7EB20602C060021083F /* KnobStyleKit.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		883AD79B205D8D2F0021083F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				883AD79A205D8D2F0021083F /* AudioKit.framework in Embed Frameworks */,
+				883AD798205D8D2F0021083F /* AudioKitUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		883AD75D205D8C0B0021083F /* Desktop synth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desktop synth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		883AD760205D8C0B0021083F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		883AD762205D8C0B0021083F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		883AD765205D8C0B0021083F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		883AD767205D8C0B0021083F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		883AD76A205D8C0B0021083F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		883AD76C205D8C0B0021083F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883AD795205D8D2F0021083F /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKitUI.framework; sourceTree = "<group>"; };
+		883AD796205D8D2F0021083F /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		883AD79C205F05380021083F /* SynthVC+NoteNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SynthVC+NoteNames.swift"; sourceTree = "<group>"; };
+		883AD7E920602C050021083F /* Knob+Touches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Knob+Touches.swift"; sourceTree = SOURCE_ROOT; };
+		883AD7EA20602C060021083F /* Knob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = SOURCE_ROOT; };
+		883AD7EB20602C060021083F /* KnobStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnobStyleKit.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		883AD75A205D8C0B0021083F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883AD799205D8D2F0021083F /* AudioKit.framework in Frameworks */,
+				883AD797205D8D2F0021083F /* AudioKitUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		883AD754205D8C0B0021083F = {
+			isa = PBXGroup;
+			children = (
+				883AD796205D8D2F0021083F /* AudioKit.framework */,
+				883AD795205D8D2F0021083F /* AudioKitUI.framework */,
+				883AD75F205D8C0B0021083F /* Desktop synth */,
+				883AD75E205D8C0B0021083F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		883AD75E205D8C0B0021083F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				883AD75D205D8C0B0021083F /* Desktop synth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		883AD75F205D8C0B0021083F /* Desktop synth */ = {
+			isa = PBXGroup;
+			children = (
+				883AD760205D8C0B0021083F /* AppDelegate.swift */,
+				883AD762205D8C0B0021083F /* ViewController.swift */,
+				883AD764205D8C0B0021083F /* Main.storyboard */,
+				883AD7EA20602C060021083F /* Knob.swift */,
+				883AD7E920602C050021083F /* Knob+Touches.swift */,
+				883AD7EB20602C060021083F /* KnobStyleKit.swift */,
+				883AD767205D8C0B0021083F /* Assets.xcassets */,
+				883AD79C205F05380021083F /* SynthVC+NoteNames.swift */,
+				883AD769205D8C0B0021083F /* LaunchScreen.storyboard */,
+				883AD76C205D8C0B0021083F /* Info.plist */,
+			);
+			path = "Desktop synth";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		883AD75C205D8C0B0021083F /* Desktop synth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 883AD76F205D8C0B0021083F /* Build configuration list for PBXNativeTarget "Desktop synth" */;
+			buildPhases = (
+				883AD759205D8C0B0021083F /* Sources */,
+				883AD75A205D8C0B0021083F /* Frameworks */,
+				883AD75B205D8C0B0021083F /* Resources */,
+				883AD79B205D8D2F0021083F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Desktop synth";
+			productName = "Desktop synth";
+			productReference = 883AD75D205D8C0B0021083F /* Desktop synth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		883AD755205D8C0B0021083F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "callum strange";
+				TargetAttributes = {
+					883AD75C205D8C0B0021083F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 883AD758205D8C0B0021083F /* Build configuration list for PBXProject "Desktop synth" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 883AD754205D8C0B0021083F;
+			productRefGroup = 883AD75E205D8C0B0021083F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				883AD75C205D8C0B0021083F /* Desktop synth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		883AD75B205D8C0B0021083F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883AD76B205D8C0B0021083F /* LaunchScreen.storyboard in Resources */,
+				883AD768205D8C0B0021083F /* Assets.xcassets in Resources */,
+				883AD766205D8C0B0021083F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		883AD759205D8C0B0021083F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883AD79D205F05380021083F /* SynthVC+NoteNames.swift in Sources */,
+				883AD7EC20602C060021083F /* Knob+Touches.swift in Sources */,
+				883AD7ED20602C060021083F /* Knob.swift in Sources */,
+				883AD763205D8C0B0021083F /* ViewController.swift in Sources */,
+				883AD7EE20602C060021083F /* KnobStyleKit.swift in Sources */,
+				883AD761205D8C0B0021083F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		883AD764205D8C0B0021083F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				883AD765205D8C0B0021083F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		883AD769205D8C0B0021083F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				883AD76A205D8C0B0021083F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		883AD76D205D8C0B0021083F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		883AD76E205D8C0B0021083F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		883AD770205D8C0B0021083F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XEDDMZW3M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Desktop synth/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "callumstrange.Desktop-synth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		883AD771205D8C0B0021083F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XEDDMZW3M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Desktop synth/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "callumstrange.Desktop-synth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		883AD758205D8C0B0021083F /* Build configuration list for PBXProject "Desktop synth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883AD76D205D8C0B0021083F /* Debug */,
+				883AD76E205D8C0B0021083F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		883AD76F205D8C0B0021083F /* Build configuration list for PBXNativeTarget "Desktop synth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883AD770205D8C0B0021083F /* Debug */,
+				883AD771205D8C0B0021083F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 883AD755205D8C0B0021083F /* Project object */;
+}
